@@ -1,0 +1,12 @@
+In file included from ../stack_tests/constructor.cpp:2:
+In file included from ../stack_tests/__service.ipp:3:
+../stack_tests/../../../stack.hpp:24:55: warning: non-void function does not return a value [-Wreturn-type]
+  stack& operator=(const stack& other) { c = other.c; }
+                                                      ^
+../stack_tests/constructor.cpp:41:9: note: in instantiation of member function 'ft::stack<int, ft::vector<int, std::__1::allocator<int> > >::operator=' requested here
+        stack3 = stack2;
+               ^
+../stack_tests/constructor.cpp:56:65: note: in instantiation of function template specialization 'constructor_test<int>' requested here
+        exit(run_stack_unit_test<int>("constructor", constructor_test, constructor_test));
+                                                                       ^
+1 warning generated.
